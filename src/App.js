@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
 import HomePage from "./components/HomePage";
@@ -10,18 +9,10 @@ function App() {
   const [tournament, setTournament] = useState(false);
 
   useEffect(() => {
-    return fetch("http://hp-api.herokuapp.com/api/characters/students")
+    return fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((response) => response.json())
       .then((data) => setStudents(data));
   }, []);
-
-  // fetch("http://hp-api.herokuapp.com/api/characters/students")
-  //   .then((response) => response.json())
-  //   .then((response) => {
-  //     setStudents(response.results);
-  //   });
-
-  console.log(students);
 
   function getWizards() {
     const three = [];
@@ -33,10 +24,6 @@ function App() {
     setTournament(true);
     return setWizards(three);
   }
-
-  // getTriRandom(0, students.length);
-  console.log(wizards);
-  console.log(students.length);
 
   return (
     <div className="App">
