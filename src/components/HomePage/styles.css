@@ -1,0 +1,61 @@
+#homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+h1#title {
+  /* position: absolute; */
+  /* width: 505px; */
+  height: 95px;
+  left: 656px;
+  top: 347px;
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 95px;
+  text-align: center;
+
+  color: #f5f5f5;
+}
+
+h2#info {
+  /* position: absolute; */
+  /* width: 414px; */
+  height: 100px;
+  left: 696px;
+  top: 461px;
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+
+  color: #f5f5f5;
+}
+
+button#rect0 {
+  /* position: absolute; */
+  width: 545px;
+  height: 58px;
+  left: 636px;
+  top: 618px;
+
+  background: #f9e141;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+
+  text-align: center;
+
+  color: #1f1f1f;
+}
