@@ -1,146 +1,117 @@
-#wizards {
+h1#champions {
+  color: #eeeeee;
+  font-family: Nunito;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+ul#wizards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-#image0 {
-  width: 311px;
-  height: 383px;
+li.wizard {
+  height: 360px;
+  margin: 30px auto;
+  width: 300px;
+}
 
-  border: 5px solid #a40201;
+figure.box {
+  height: 360px;
+  margin: 0;
+  width: 300px;
+}
+
+img.image {
+  border: 5px solid #eeeeee;
+  border-radius: 15px;
   box-sizing: border-box;
-  border-radius: 15px;
+  height: 236px;
+  width: 177px;
 }
 
-#image1 {
-  width: 311px;
-  height: 383px;
-
-  border: 5px solid #f9e141;
-  box-sizing: border-box;
-  border-radius: 15px;
+img#gryffindor {
+  border-color: #a40201;
 }
 
-#image2 {
-  width: 311px;
-  height: 383px;
-
-  border: 5px solid #00a421;
-  box-sizing: border-box;
-  border-radius: 15px;
+img#slytherin {
+  border-color: #00a421;
 }
 
-h1#name0 {
-  /* width: 170px; */
-  height: 41px;
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #eeeeee;
+img#ravenclaw {
+  border-color: #0052cc;
 }
 
-h1#name1 {
-  /* width: 205px; */
-  height: 41px;
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #eeeeee;
-}
-
-h1#name2 {
-  /* width: 180px; */
-  height: 41px;
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #eeeeee;
-}
-
-h2#house0 {
-  /* width: 141px; */
-  height: 41px;
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #fc3c3b;
-}
-
-h2#house1 {
-  /* width: 139px; */
-  height: 41px;
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #f9e141;
-}
-
-h2#house2 {
-  /* width: 122px; */
-  height: 41px;
-
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #00a421;
-}
-
-button#rect1 {
-  width: 545px;
-  height: 58px;
-  background: #f9e141;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 41px;
-
-  text-align: center;
-
-  color: #1f1f1f;
-  margin-bottom: 20px;
+img#hufflepuff {
+  border-color: #f9e141;
 }
 
 figcaption {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 117px;
+  justify-content: space-between;
+}
+
+h1.name {
+  color: #eeeeee;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+h2.house {
+  color: #eeeeee;
+  font-family: Nunito;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+h2#Gryffindor {
+  color: #fc3c3b;
+}
+
+h2#Slytherin {
+  color: #00a421;
+}
+
+h2#Ravenclaw {
+  color: #095cda;
+}
+
+h2#Hufflepuff {
+  color: #f9e141;
+}
+
+button#rect1 {
+  background: #f9e141;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #1f1f1f;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+button#rect1:hover {
+  background-color: #00a421;
+  cursor: pointer;
+  transition: 0.5s;
 }

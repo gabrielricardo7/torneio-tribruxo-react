@@ -16,10 +16,15 @@ function App() {
 
   function getWizards() {
     const three = [];
-    let min = 0;
-    let max = students.length;
-    for (let i = 0; i < 3; i++) {
-      three.push(students[Math.floor(Math.random() * (max - min)) + min]);
+    const min = 0;
+    const max = students.length;
+    const houses = [];
+    while (three.length < 3) {
+      let wizard = students[Math.floor(Math.random() * (max - min)) + min];
+      if (!houses.includes(wizard.house)) {
+        houses.push(wizard.house);
+        three.push(wizard);
+      }
     }
     setTournament(true);
     return setWizards(three);
